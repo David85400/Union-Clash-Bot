@@ -104,7 +104,7 @@ type SpamRule struct {
 	BaseRule `valid:"traverse"`
 
 	NumMessages int `valid:"0,1000"`
-	Within      int `valid:"0,100"`
+	Within      int `valid:"0,80000"`
 }
 
 // Triggers when a certain number of messages is found by the same author within a timeframe
